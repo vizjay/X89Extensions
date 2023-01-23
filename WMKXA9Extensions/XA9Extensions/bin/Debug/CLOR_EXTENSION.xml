@@ -1,0 +1,38 @@
+<FacetsData>
+<Collection name="CLOR" type="Group">
+    <SubCollection name="CLOR" type="Row">
+      <Column name="_Class">CMC_APPREC_CLOR</Column>
+      <Column name="_Lib">ccllrec0.dll</Column>
+      <Column name="_Modified">1</Column>
+      <Column name="_AccessFunc">1</Column>
+      <Column name="LOCK_TOKEN">1</Column>
+      <Column name="CLCL_ID"></Column>
+      <Column name="CLOR_OR_ID">BH</Column>
+      <Column name="MEME_CK">0</Column>
+      <Column name="CLOR_OR_AMOUNT">0.0000</Column>
+      <Column name="CLOR_OR_VALUE"></Column>
+      <Column name="CLOR_OR_DT">NULL</Column>
+      <Column name="EXCD_ID">059</Column>
+      <Column name="CLOR_OR_USID">jayaramanv</Column>
+      <Column name="CLOR_AUTO_GEN">S</Column>
+      <Column name="CLOR_LOCK_TOKEN">0</Column>
+    </SubCollection>
+    <SubCollection name="CLOR" type="Row">
+      <Column name="_Class">CMC_APPREC_CLOR</Column>
+      <Column name="_Lib">ccllrec0.dll</Column>
+      <Column name="_Modified">0</Column>
+      <Column name="_AccessFunc">0</Column>
+      <Column name="LOCK_TOKEN">1</Column>
+      <Column name="CLCL_ID">200015934100</Column>
+      <Column name="CLOR_OR_ID">IL</Column>
+      <Column name="MEME_CK">13310300</Column>
+      <Column name="CLOR_OR_AMOUNT">0</Column>
+      <Column name="CLOR_OR_VALUE"></Column>
+      <Column name="CLOR_OR_DT">7/18/2016 12:00:00 AM</Column>
+      <Column name="EXCD_ID">326</Column>
+      <Column name="CLOR_OR_USID">jayaramanv</Column>
+      <Column name="CLOR_AUTO_GEN"></Column>
+      <Column name="CLOR_LOCK_TOKEN">0</Column>
+    </SubCollection>
+  </Collection>
+</FacetsData>

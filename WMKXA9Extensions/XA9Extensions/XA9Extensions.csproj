@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A260EB91-20C2-4D45-A6D0-23CF9560A054}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XA9Extensions</RootNamespace>
+    <AssemblyName>XA9Extensions</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>true</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="facetsbasecontrol501">
+      <HintPath>..\..\..\..\..\Library\facetsbasecontrol501.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Interop.ErCoreIfcExtensionData">
+      <HintPath>..\..\..\..\..\Source_Code\WMKXA9Extensions\SourceCode\Library\Interop.ErCoreIfcExtensionData.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessLayer\Cdor.cs" />
+    <Compile Include="BusinessLayer\Claim.cs" />
+    <Compile Include="BusinessLayer\ClaimLine.cs" />
+    <Compile Include="BusinessLayer\CLCB.cs" />
+    <Compile Include="BusinessLayer\CLHP.cs" />
+    <Compile Include="BusinessLayer\Clim.cs" />
+    <Compile Include="BusinessLayer\CLOR.cs" />
+    <Compile Include="BusinessLayer\ContextData.cs" />
+    <Compile Include="BusinessLayer\PRPR.cs" />
+    <Compile Include="BusinessLayer\SERL.cs" />
+    <Compile Include="Common Utilities\ApplicationData.cs" />
+    <Compile Include="Common Utilities\AssemblyInformation.cs" />
+    <Compile Include="Common Utilities\Connectivity.cs" />
+    <Compile Include="Common Utilities\Constants.cs" />
+    <Compile Include="Common Utilities\Conversion.cs" />
+    <Compile Include="Common Utilities\DataExtraction.cs" />
+    <Compile Include="Common Utilities\Enumerations.cs" />
+    <Compile Include="Common Utilities\EventLogger.cs" />
+    <Compile Include="Common Utilities\FacetsBaseControlEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common Utilities\frmMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common Utilities\frmMessage.Designer.cs">
+      <DependentUpon>frmMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common Utilities\MessageBoxEx.cs" />
+    <Compile Include="Common Utilities\ObjectEx.cs" />
+    <Compile Include="Common Utilities\UserControls.cs" />
+    <Compile Include="frmStopLoss.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataAccessLayer\XA9DataLayer.cs" />
+    <Compile Include="BusinessLayer\FacetsData.cs" />
+    <Compile Include="BusinessLayer\XA9BusinessLayer.cs" />
+    <Compile Include="frmXA9BDCMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="Utilities\AppConfig.cs" />
+    <Compile Include="Utilities\Helper.cs" />
+    <Compile Include="Utilities\Logger.cs" />
+    <Compile Include="XA9Constants.cs" />
+    <Compile Include="XA9XCom.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common Utilities\frmMessage.resx">
+      <DependentUpon>frmMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStopLoss.resx">
+      <DependentUpon>frmStopLoss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXA9BDCMain.resx">
+      <DependentUpon>frmXA9BDCMain.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
